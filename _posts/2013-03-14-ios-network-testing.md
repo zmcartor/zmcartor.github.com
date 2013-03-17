@@ -2,13 +2,13 @@
 layout: post
 title: "iOS Network Testing"
 description: ""
-category: 
-tags: []
+category: 'code' 
+tags: ['ios' , 'testing']
 ---
 {% include JB/setup %}
 [Permalink](http://hackazach.net/post/44988952817/ios-network-testing "Permalink to HackaZach; • iOS Network Testing")
 
-# HackaZach; • iOS Network Testing
+#iOS Network Testing
 
 During development of an API client, do you require VPN connectivity to hit web service? Is a network service your app relies on a little less than completely reliable? oh and each network error handler has been tested  to ensure things keep working, right? Yeah - Maybe not. Network testing can be a real pain in the ass. The aim of this article is to lower the aching pain in your backside while testing iOS apps; and to hopefully make it a part of normal workflow. 
 
