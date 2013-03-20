@@ -10,9 +10,9 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : HackaZach;
-tagline:
-author : @ZMcArtor
-  name : Zach McArtor
+tagline: false
+author :
+  name : superdude
   email : zach@hackazach.net
   github : zmcartor
   twitter : zmcartor
@@ -55,7 +55,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : false
+  BASE_PATH : https://zmcartor.github.com
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
@@ -81,7 +81,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
+    provider : false disabled site wide
     disqus :
       short_name : jekyllbootstrap
     livefyre :
@@ -101,7 +101,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-10095531-3'
     getclicky :
       site_id : 
     mixpanel :
