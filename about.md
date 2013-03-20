@@ -1,18 +1,15 @@
 ---
 layout: page
-title: "About"
+title: About Zach
 description: ""
 ---
 {% include JB/setup %}
-[Permalink](http://hackazach.net/about_me "Permalink to HackaZach; • About Zach")
 
-# HackaZach; • About Zach
-
-**TL;DR - **CTO of [Taivara][1]. A development firm in Columbus, OH. I also enjoy developing in Javascript, Ruby, Objective-C.
+**TL;DR** - CTO of [Taivara][1]; a digital development firm in Columbus, OH. I also develop in Javascript, Ruby, Objective-C.
 
 Twitter: [@zmcartor][2]
 
-Github: 
+Github: [https://github.com/zmcartor][3] 
 
 **About Myself**
 
@@ -32,5 +29,4 @@ I’m seeking the company of similarly passionate developers that I can learn fr
 
  [1]: http://www.taivara.com "Taivara"
  [2]: http://twitter.com/#!/zmcartor "Twitter"
- []: https://github.com/zmcartor "GitHub"
- []: https://github.com/zmcartor  
+ [3]: https://github.com/zmcartor "GitHub"
