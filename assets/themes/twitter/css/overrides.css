@@ -266,3 +266,6 @@ input[type="color"],
    background-color: #3a87ad;
 }
 
+/* fix for pygments code highlighting */
+code{color:rgba(0, 0, 0, 0.75);padding:1px 3px;}
+
