@@ -3,7 +3,7 @@ layout: post
 title: "Effective web API testing on iOS"
 description: ""
 category: 'code' 
-tags: ['ios' , 'testing']
+tags: ['iOS' , 'testing']
 ---
 {% include JB/setup %}
 [Permalink](http://hackazach.net/post/44988952817/ios-network-testing "Permalink to HackaZach; • iOS Network Testing")
