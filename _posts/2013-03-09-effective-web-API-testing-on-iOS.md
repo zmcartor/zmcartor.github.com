@@ -8,8 +8,12 @@ tags: ['ios' , 'testing']
 {% include JB/setup %}
 [Permalink](http://hackazach.net/post/44988952817/ios-network-testing "Permalink to HackaZach; • iOS Network Testing")
 
-During development of an API client, do you require VPN connectivity to hit web service? Is a network service your app relies on a little less than completely reliable? oh and each network error handler has been tested  to ensure things keep working, right? Yeah - Maybe not. Network testing can be a real pain in the ass. The aim of this article is to lower the aching pain in your backside while testing iOS apps; and to hopefully make it a part of normal workflow. 
-
+Many iOS apps contain code which relies on a third-party web service for data
+or another type of behavior. Testing this interface is often ad-hoc at best.
+Any errors encountered are swallowed into the abyss of 'that only happens with
+bad connectivity ...' Development which relies on the availability of an
+interface can also be problematic; such as requiring VPN access to hit a
+not-yet released server, or other factors. 
 This article contains a sample walk-through of testing an imaginary web service with ILTesting, AFNetworking and Kiwi. It’s assumed the reader is familiar with the basics of Cocoa Touch, XCode and project creation.
 
 If you’re a solid iOS dev but not familiar with Kiwi or AFnetworking, please check them out:
