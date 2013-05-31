@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Zach
+title: Zach who?
 description: ""
 ---
 {% include JB/setup %}
