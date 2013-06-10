@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Coffeescript and QR Codes"
-description: ""
+description: "Generate beautiful, colored QRCodes with Coffescript and HTML5 SVG"
 category: 'code'
 tags: ['coffeescript' , 'html5']
 ---

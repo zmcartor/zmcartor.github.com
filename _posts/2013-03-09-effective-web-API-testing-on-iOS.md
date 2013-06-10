@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Effective web API testing on iOS"
-description: ""
+description: "Test AFNetworking API code using Kiwi and ILTesting frameworks. A brief walkthrough and sample project illustrating how these frameworks can help write better tested iOS code."
 category: 'code' 
 tags: ['iOS' , 'testing']
 ---

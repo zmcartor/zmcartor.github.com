@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Consider customer hardware"
-description: ""
+description: "Consider customer hardware when developing cutting edge web apps. A cautionary tirade."
 category: productivity 
 tags: ['productivity']
 ---

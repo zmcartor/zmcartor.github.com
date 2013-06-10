@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS Core Data Prepopulation"
-description: ""
+description: "Step by step instructions describing howto prepopulate CoreData and sqlite. "
 category: code
 tags: [iOS, core data]
 ---
