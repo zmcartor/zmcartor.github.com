@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Objective-C method metaprogramming"
-description: "A simple introduction to the world of meta-programming in Objective-C. Included within this article is an example of howto use the ObjC runtime to add dynamic methods"
+description: "A simple introduction to the world of meta-programming in Objective-C. Code provided which illustrates howto metaprogram dynamic instance and class methods"
 category: code 
 tags: ['iOS', 'metaprogramming']
 ---
