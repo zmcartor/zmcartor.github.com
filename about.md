@@ -13,7 +13,7 @@ Github: [https://github.com/zmcartor][3]
 
 **What I’m Looking For**
 
-I’m seeking the company of similarly passionate developers that I can learn from and build on. I think source code should be written for humans to read, and only incidentally for machines to execute. I hold myself accountable and my work to a high standard. I seek a place where others have the same passion for high quality software.
+I’m seeking the company of similarly passionate developers and creative individuals. I think source code should be written for humans to read, and only incidentally for machines to execute. I hold myself accountable and my work to a high standard. I seek a place where others have the same passion for high quality software.
 
 **About Myself**
 
