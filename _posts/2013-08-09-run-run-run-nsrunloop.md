@@ -124,3 +124,6 @@ future, adding more complexity can easily be accomplished by creating more job
 classes, and feeding them into the run loop. Quick and dirty programs are
 great, but the ability to make sense of them several months down the road is
 priceless :)
+
+More on NSRunLoop from this fine article:
+[Cocoa Factory, what is an NSRunLoop](http://cocoafactory.com/blog/2012/09/06/whats-a-run-loop-anyway/)
