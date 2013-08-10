@@ -27,6 +27,8 @@ Curiosity, the thirst for new knowledge frontiers and the primal urge to create,
 
 Regarding myself outside of technology, I’ve taken up a number of different hobbies to occupy my time between git commits. I love learning new things and breaking ground in uncharted territory. I taught myself the basics of music theory and piano in my free time and honed my skills through instruction. I have been playing for 5 years, mostly bebop. Combining music and programming, I also indulge in creating glitchy, circuit bent instruments, synth programming and sound design. 
 
+![](/images/pixellight.jpg)
+
  [1]: http://www.taivara.com "Taivara"
  [2]: http://twitter.com/#!/zmcartor "Twitter"
  [3]: https://github.com/zmcartor "GitHub"
