@@ -23,12 +23,12 @@ Now, on with the story!
 
 The restaurant where Chef Penguin resides is widely reknowned for it's ability to quickly  produce exceptionally delicious soups. Now, Chef Penguin is a skilled gourmand, able to recognize the subtle differences and savory pairings of spices, broth, and meats. But his skill is only half the story: the kitchen's ability to produce such high quality soups also relies on a unique collaborative process. Chef Penguin employs three Sous Chefs which every morning, take a crock of soup from the Master serving pot:
 
-<!--- picture of each chef and their own crock of soup taken from master serving pot. --->
+<!--- picture of each chef and their own crock of soup taken from master serving pot. -->
 
 Customers are dished up from the Master serving pot as well. When taking their own crocks of soup, it's important each Sous Chef ladle from the same pot as customers.
 Throughout the day, each Sous Chef experiments within their own crock of soup. 
 
-<!--
+<!---
 one picture:
  picture of adding new spices
  picture adding grilled chicken
@@ -43,11 +43,11 @@ Yum! Those new spices are delicious. The sage and rosemary really bring out the 
 
 When a Sous Chef has something delicious they would like to add to the Master pot, they submit a 'pour' request. Chief Chef Pengin first tastes the change and if accepted, added to the Master pot.
 
-<!-- picture of Chef penguin thumbs up, and adding to Master pot -->
+<!--- picture of Chef penguin thumbs up, and adding to Master pot -->
 
 Great! Customers will love those new spices. Now that the Master pot has new spices, the other Sous Chefs must make sure to ladle in the new spices to their crocks.
 
- <!-- picture new spices ladled into other pots, arrows? -->
+ <!--- picture new spices ladled into other pots, arrows? -->
 
 Hmm, the new spices don't taste quite right with the grilled chicken, so this Sous Chef switches out grilled chicken for sauteed chicken.
 
@@ -60,7 +60,7 @@ and on and on throughout the afternoon Chefs continue to experiment, making the 
 
 Continue throughout the day until dinner time. Now the final product is served to hungry customers. 
 
-<!--
+<!---
  picture of happy customers
  -->
 
