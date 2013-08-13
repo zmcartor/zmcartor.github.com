@@ -49,7 +49,7 @@ void (^processSuccess)(NSURLRequest *request, NSHTTPURLResponse *response, id JS
     };
 
     AFJSONRequestOperation *networkOp = 
-    [AFJSONRequestOperation JSONRequestOperationWithRequest:plantRequest
+    [AFJSONRequestOperation JSONRequestOperationWithRequest:thingRequest
                                                     success:processSuccess
                                                     failure:failBlock];
     [networkOp start];
