@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chief technical gardener"
+title: "Chief Technical Gardener"
 description: "responsibilies of the technical founder within an early stage
 company is much like growing a garden"
 category: professional 
@@ -8,7 +8,6 @@ tags: [startups]
 ---
 {% include JB/setup %}
 
-### Chief Technical Gardener
 'Technical co-founder' may sound like a dream to the common coder. However busting out code is only one responsibility for a new technical co-founder.
 While technical competence is important, there are other more 'human' facets to the role:
 
