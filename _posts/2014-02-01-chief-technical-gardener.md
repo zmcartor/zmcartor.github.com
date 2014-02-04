@@ -16,8 +16,11 @@ While technical competence is important, there are other more 'human' facets to 
 * Be a solid rock the CEO and business can trust to make sound technical decisions based on business needs 
 * The human face of the engineering team! :)
 
+![butterfly and code](/images/technical_gardener.png)
+
 ### Hacker chops wrapped in sound business judgement
 What differentiates quality technical founders isn't technical wizardry, but judgement - the ability to correctly and effectively in weigh technical tradeoffs against business objetives. These decisions are tough, and the company may have to live with the outcome of these decisions for a long time. The measure of a good decision is the abilty to forsee the ramifications when circumstances outgrow the solution. Good judgement differentiates hype from fact and doesn't make technology decisions based on shiny.
+
 
 ### Tending a tidy garden for others
 When coding in a rush, the project can get a little out of whack - bad or no convention, poorly named files, blasphemous hacks; it happens. Especially if you are a single founder or with a small team. **Tribal knowledge is a killer**  It's a real time waster to bring another dev up on an unconventional design all because the technical founder was too lazy to follow a convention. Keep things tidy, write conceptual documentation, *write tests!*. Prepare the garden as if others were coming to tend.
