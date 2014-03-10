@@ -11,7 +11,7 @@ tags: ["iOS", "testing"]
 This article assumes the reader is familiar with testing in Xcode 5 using [XCTest](https://developer.apple.com/library/ios/documentation/ToolsLanguages/Conceptual/Xcode_Overview/UnitTestYourApp/UnitTestYourApp.html), BDD style [Kiwi](https://github.com/allending/Kiwi) or another iOS testing framework.
 
 ### What is mocking ?
-![paper tiger](/images/paper_tiger.jpg)
+# ![paper tiger](/images/paper_tiger.jpg)
 When unit testing, it's imperative to instantiate as little concrete components as possible to keep tests short, fast, and preserve unit isolation. In a modern Object Oriented system, the component under test will likely have several object dependencies. Instead of instantiating dependencies as concrete classes, we use mocks. Mocks are 'fake' objects with pre-defined behavior to stand-in for concrete objects during testing. The component under test does not know the difference! With mocks, a component can be tested with confidence that it behaves as designed within a larger system.
 <br/>
 ### Common mock use cases
@@ -86,7 +86,7 @@ The ```verify``` method will throw an exception if the method was not called. If
 <br/>
 
 ### In closing
-![paper tiger](/images/origami-swan-cute.jpg)
+# ![paper tiger](/images/origami-swan-cute.jpg)
 Hopefully this article and examples have clarified some of the most commons uses of OCMock. The OCMock site: [http://ocmock.org/features/](http://ocmock.org/features/) is a the best reference for everything in the OCMock world.
 
 Mocking can be tedious but is necessary to fully test a modern, OO system. If a dependency graph is difficult to test with mocks, this is an indication the design may need to be re-considered.
