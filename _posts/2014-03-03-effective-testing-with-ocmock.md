@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Effective testing with OCMock"
-description: "Walkthrough of several common tests scenarios using the features of OCMock"
+title: "Effective iOS testing with OCMock"
+description: "Walkthrough of OCMock and how mocking features can be applied to common test scenarios"
 category: code
 tags: ["iOS", "testing"]
 ---
