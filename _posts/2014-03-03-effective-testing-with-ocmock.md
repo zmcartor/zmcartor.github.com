@@ -25,20 +25,20 @@ To start, here's a simple example which explains the general stubbing grammar in
  // if returning a scalar value, andReturnValue: can be used
  {% endhighlight %}
  
- This contrived example first creates a mock jalopy from the class Car. Next, it stubs out the method  ``` goFaster:``` to return the NSString ```@"75kph"```. The stubbing syntax may seem a litle weird at first, but this is the general idea :
+ This contrived example first creates a mock jalopy from the class Car. Next, it stubs out the method    goFaster:  to return the NSString  @"75kph" . The stubbing syntax may seem a litle weird at first, but this is the general idea :
  
- ```ourMockObject``` stub] ```whatItShouldReturn``` ] ```method:```
+  ourMockObject  stub]  whatItShouldReturn  ]  method: 
  
-**One very important note:** , notice the usage of ```OCMOCK_ANY```. When specifying a method which takes parameters, the mock will return the value specified by ```andReturn:``` *only* when the method is invoked with the provided parameters. The macro ```OCMOCK_ANY`` tells the stub to fire for any parameter value. In the example, an invocation of 
+**One very important note:** , notice the usage of  OCMOCK_ANY . When specifying a method which takes parameters, the mock will return the value specified by  andReturn:  *only* when the method is invoked with the provided parameters. The macro  OCMOCK_ANY tells the stub to fire for any parameter value. In the example, an invocation of 
  
  {% highlight objective-c %}
 [car goFaster:84 units:@"mph"];
 {% endhighlight %}
 
-Would _not_ trigger the stub because the last parameter ```units:``` does not match ```@"kph"```
+Would _not_ trigger the stub because the last parameter  units:  does not match  @"kph" 
 
 #### Class methods
-OCMock will find class methods on the mock instance as long as there is not an instance method with the same name. In the event of same named methods, employ the ```classMethod``` method:
+OCMock will find class methods on the mock instance as long as there is not an instance method with the same name. In the event of same named methods, employ the  classMethod  method:
 
 {% highlight objective-c %}
 [[[[jalopy stub] classMethod] andReturn:@"expired"] checkWarrany];
@@ -71,7 +71,7 @@ id aMock = [OCMockObject partialMockForObject:someThing]
 <br/>
 
 #### Verify method was or wasn't called
-Verifying a method was or was not called is easy. This can be accomplished by ```expect```, ```reject``` and ```verify``` methods :
+Verifying a method was or was not called is easy. This can be accomplished by  expect ,  reject  and  verify  methods :
 
 {% highlight objective-c %}
  id niceMockThing = [OCMock niceMockForClass[Thing class]];
@@ -82,7 +82,7 @@ Verifying a method was or was not called is easy. This can be accomplished by ``
  
 {% endhighlight %}
 
-The ```verify``` method will throw an exception if the method was not called. If you're using XCTest, wrap the ```verify``` call within an ```XCTAssertNotThrow```. Reject works the same way, but will throw when the method _is_ called on the mock. Just like when stubbing, the selector and arguments passed to ```verify``` must match those passed by the caller. Use ```OCMOCK_ANY``` to make things easier.
+The  verify  method will throw an exception if the method was not called. If you're using XCTest, wrap the  verify  call within an  XCTAssertNotThrow . Reject works the same way, but will throw when the method _is_ called on the mock. Just like when stubbing, the selector and arguments passed to  verify  must match those passed by the caller. Use  OCMOCK_ANY  to make things easier.
 <br/>
 
 ### In closing
