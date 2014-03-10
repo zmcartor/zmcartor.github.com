@@ -86,7 +86,7 @@ The ```verify``` method will throw an exception if the method was not called. If
 <br/>
 
 ### In closing
-![paper tiger](/images/origami-swan-cute.jpg)
+# ![paper tiger](/images/origami-swan-cute.jpg)
 Hopefully this article and examples have clarified some of the most commons uses of OCMock. The OCMock site: [http://ocmock.org/features/](http://ocmock.org/features/) is a the best reference for everything in the OCMock world.
 
 Mocking can be tedious but is necessary to fully test a modern, OO system. If a dependency graph is difficult to test with mocks, this is an indication the design may need to be re-considered.
