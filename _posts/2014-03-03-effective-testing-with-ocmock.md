@@ -10,7 +10,7 @@ tags: ["iOS", "testing"]
 ### Audience
 This article assumes the reader is familiar with testing in Xcode 5 using [XCTest](https://developer.apple.com/library/ios/documentation/ToolsLanguages/Conceptual/Xcode_Overview/UnitTestYourApp/UnitTestYourApp.html), BDD style [Kiwi](https://github.com/allending/Kiwi) or another iOS testing framework.
 
-### What is mocking ?
+### What is mocking ? Paper tigers, mostly
 # ![paper tiger](/images/paper_tiger.jpg)
 When unit testing, it's imperative to instantiate as little concrete components as possible to keep tests short, fast, and preserve unit isolation. In a modern Object Oriented system, the component under test will likely have several object dependencies. Instead of instantiating dependencies as concrete classes, we use mocks. Mocks are 'fake' objects with pre-defined behavior to stand-in for concrete objects during testing. The component under test does not know the difference! With mocks, a component can be tested with confidence that it behaves as designed within a larger system.
 <br/>
@@ -83,6 +83,45 @@ Verifying a method was or was not called is easy. This can be accomplished by  e
 {% endhighlight %}
 
 The  verify  method will throw an exception if the method was not called. If you're using XCTest, wrap the  verify  call within an  XCTAssertNotThrow . Reject works the same way, but will throw when the method _is_ called on the mock. Just like when stubbing, the selector and arguments passed to  verify  must match those passed by the caller. Use  OCMOCK_ANY  to make things easier.
+<br/>
+
+#### Dealing with block arguments
+Block callback parameters can also be handled by OCMock. Block callbacks are common in networking code, database code, or anywhere async operations are plentiful. For this example, consider the following method : 
+
+{% highlight objective-c %}
+
+- (void)downloadWeatherDataForZip:(NSString *)zip
+              callback:(void (^)(NSDictionary *response))callback;
+
+{% endhighlight %}
+
+In this example, we have a method which downloads weather data for a given zip and delegates the downloaded dictionary into a block callback. To test, let's pass pre-defined weather data to test callback handling. It's also advisable to test failure scenarios; you never know what can come from the network!
+
+{% highlight objective-c %}
+
+// 1. stub using OCMock andDo: operator.
+
+[[[groupModelMock stub] andDo:^(NSInvocation *invoke) {
+        //2. declare a block with same signature
+        void (^weatherStubResponse)(NSDictionary *dict);
+        
+        //3. link argument 3 with with our block callback
+        [invoke getArgument:&weatherStubResponse atIndex:3];
+        
+        //4. invoke block with pre-defined input
+        NSDictionary *testResponse = @{@"high": 43 , @"low": 12};
+        weatherStubResponse(groupMemberMock);
+        
+    }]downloadWeatherDataForZip@"80304" callback:OCMOCK_ANY ];
+
+{% endhighlight %}
+<br/>
+
+The general idea here is reletively simple, even though it's implementation requires some explanation:
+1. This mock uses the 'andDo' method which accepts an NSInvocation argument. An NSInvocation object represents an 'objectivetified' representation of a method invocation. Through this NSinvocation object, it is possible to intercept the block parameter passed to our function.
+2. Declare a block parameter with the same method signature as the one in our test method. 
+3. NSInvocation instance method 'getArgument:atIndex:' assigns the block parameter passed to the original function to our locally declared block variable. **Note : ** in Objective-C, the first two parameters passed to any function are 'self' and '_cmd.' This is a little feature of the runtime and something to consider when grabbing parameters by index from an NSInvocation.
+4. Finally, pass the callback a pre-defined dictionary. 
 <br/>
 
 ### In closing
