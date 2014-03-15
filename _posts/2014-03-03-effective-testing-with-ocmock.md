@@ -20,7 +20,7 @@ When unit testing, it's imperative to instantiate as little concrete components 
 To start, here's a simple example which explains the general stubbing grammar in OCMock : 
 {% highlight objective-c %}
  id jalopy = [OCMock mockForClass[Car class]];
- [[[jalopy stub] andReturn:@"75kph"] goFaster:OCMOCK_ANY units:@"kph"];
+ [[[jalopy stub] andReturn:@"75kph"] goFaster:[OCMArg any] units:@"kph"];
  
  // if returning a scalar value, andReturnValue: can be used
  {% endhighlight %}
@@ -29,7 +29,7 @@ To start, here's a simple example which explains the general stubbing grammar in
  
   ourMockObject  stub]  whatItShouldReturn  ]  method: 
  
-**One very important note:** , notice the usage of  OCMOCK_ANY . When specifying a method which takes parameters, the mock will return the value specified by  andReturn:  *only* when the method is invoked with the provided parameters. The macro  OCMOCK_ANY tells the stub to fire for any parameter value. In the example, an invocation of 
+**One very important note:** , notice the usage of [OCMArg any] . When specifying a method which takes parameters, the mock will return the value specified by  andReturn:  *only* when the method is invoked with the provided parameters. The method [OCMArg any] tells the stub to fire for any parameter value. In the example, an invocation of 
  
  {% highlight objective-c %}
 [car goFaster:84 units:@"mph"];
@@ -82,7 +82,7 @@ Verifying a method was or was not called is easy. This can be accomplished by  e
  
 {% endhighlight %}
 
-The  verify  method will throw an exception if the method was not called. If you're using XCTest, wrap the  verify  call within an  XCTAssertNotThrow . Reject works the same way, but will throw when the method _is_ called on the mock. Just like when stubbing, the selector and arguments passed to  verify  must match those passed by the caller. Use  OCMOCK_ANY  to make things easier.
+The  verify  method will throw an exception if the method was not called. If you're using XCTest, wrap the  verify  call within an  XCTAssertNotThrow . Reject works the same way, but will throw when the method _is_ called on the mock. Just like when stubbing, the selector and arguments passed to  verify  must match those passed by the caller. Use [OCMArg any] to make things easier.
 <br/>
 
 #### Dealing with block arguments
@@ -112,7 +112,7 @@ In this example, we have a method which downloads weather data for a given zip a
         NSDictionary *testResponse = @{@"high": 43 , @"low": 12};
         weatherStubResponse(groupMemberMock);
         
-    }]downloadWeatherDataForZip@"80304" callback:OCMOCK_ANY ];
+    }]downloadWeatherDataForZip@"80304" callback:[OCMArg any] ];
 
 {% endhighlight %}
 <br/>
