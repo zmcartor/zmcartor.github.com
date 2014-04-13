@@ -6,6 +6,29 @@
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
+    <a href="https://plus.google.com/106458939084065472913?rel=author"></a>
+   
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@zmcartor">
+    <meta name="twitter:creator" content="@zmcartor">
+{% if page.title %}
+<meta name="twitter:title" content="{{ page.title }}">
+{% else %}
+<meta name="twitter:title" content="{{ site.title }}">
+{% endif %}
+{% if page.url %}
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+{% endif %}
+{% if page.description %}
+<meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+{% if page.image %}
+<meta name="twitter:image:src" content="{{ site.url }}/path/to/image/{{ page.image }}">
+{% endif %}
+
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

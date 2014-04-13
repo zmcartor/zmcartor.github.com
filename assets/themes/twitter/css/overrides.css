@@ -1,9 +1,10 @@
 body {
   margin: 0;
-  font-family: "HelveticaNeue", "sans-serif";
+  font-family: "PxGrotesk-Regular", "Arial", sans-serif;
   font-size: 16px;
   color: #333333;
   background-color: #ffffff;
+  -webkit-font-smoothing: antialiased; 
 }
 
 a {
