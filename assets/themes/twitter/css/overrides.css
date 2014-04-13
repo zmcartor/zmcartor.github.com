@@ -47,6 +47,24 @@ h2 a:hover {
   color: #DAD;
 }
 
+h2 a {
+ text-shadow: 0 1px 0 #7A7377;
+ }
+
+ li.post-list {
+   list-style-type: none;
+   margin-bottom: 5px;
+ }
+
+ li.post-list a:hover {
+   text-decoration: none;
+   color: #DAD;
+ }
+
+ span.date {
+   color: #ccc;
+ }
+
 h1,
 h2,
 h3,
