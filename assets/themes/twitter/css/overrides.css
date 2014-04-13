@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Tahoma", "Arial", "Helvetica", "sans-serif";
+  font-family: "HelveticaNeue", "sans-serif";
   font-size: 16px;
   color: #333333;
   background-color: #ffffff;
@@ -8,11 +8,37 @@ body {
 
 a {
   color: #ff007f;
-} 
+}
 
 p {
   font-size: 18px;
   line-height: 1.5;
+}
+
+div.date span {
+  color: #DAD4D4;
+}
+
+footer {
+  color: #DAD4D4;
+}
+
+div.navbar-inner {
+  background: url("/images/white_wave.png");
+}
+element.style {
+}
+
+.navbar ul.nav > li > a {
+  color: #ff007f;
+  font-size: 18px;
+}
+
+img {
+  box-shadow: 3px 3px 1px #ccc;
+  -webkit-box-shadow: 3px 3px 1px #ccc;
+  -moz-box-shadow: 3px 3px 1px #ccc;
+  margin: 20px 0 20px 0;
 }
 
 h1,
