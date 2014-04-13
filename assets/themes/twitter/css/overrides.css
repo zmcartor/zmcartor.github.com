@@ -42,6 +42,11 @@ p img {
   margin: 20px 0 20px 0;
 }
 
+h2 a:hover {
+  text-decoration: none;
+  color: #DAD;
+}
+
 h1,
 h2,
 h3,
