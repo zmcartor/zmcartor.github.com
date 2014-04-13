@@ -35,7 +35,7 @@ To start, here's a simple example which explains the general stubbing grammar in
 [car goFaster:84 units:@"mph"];
 {% endhighlight %}
 
-Would _not_ trigger the stub because the last parameter  units:  does not match  @"kph" 
+Would _not_ trigger the stub because the last parameter  units:  does not match  "kph" 
 
 #### Class methods
 OCMock will find class methods on the mock instance as long as there is not an instance method with the same name. In the event of same named methods, employ the  classMethod  method:
@@ -43,7 +43,6 @@ OCMock will find class methods on the mock instance as long as there is not an i
 {% highlight objective-c %}
 [[[[jalopy stub] classMethod] andReturn:@"expired"] checkWarrany];
 {% endhighlight %}
-</br>
 
 #### Types of mocks - niceMock, partialMock
 OCmock provides several diffent types of mocks, each with their specific use case.
@@ -67,8 +66,6 @@ The last type of mock is a 'partial' mock. When an unstubbed method is invoked, 
 Thing *someThing = [Thing alloc] init];
 id aMock = [OCMockObject partialMockForObject:someThing]
 {% endhighlight %}
-
-<br/>
 
 #### Verify method was or wasn't called
 Verifying a method was or was not called is easy. This can be accomplished by  expect ,  reject  and  verify  methods :
@@ -115,7 +112,6 @@ In this example, we have a method which downloads weather data for a given zip a
     }]downloadWeatherDataForZip@"80304" callback:[OCMArg any] ];
 
 {% endhighlight %}
-<br/>
 
 The general idea here is reletively simple, even though it's implementation requires some explanation:
 1. This mock uses the 'andDo' method which accepts an NSInvocation argument. An NSInvocation object represents an 'objectivetified' representation of a method invocation. Through this NSinvocation object, it is possible to intercept the block parameter passed to our function.
