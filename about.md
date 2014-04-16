@@ -5,11 +5,13 @@ description: ""
 ---
 {% include JB/setup %}
 
-**TL;DR** - CTO of [Taivara][1]; a digital development firm in Columbus, OH. I also develop in Javascript, Ruby, Objective-C.
-
+####TL;DR
 Twitter: [@zmcartor][2]
 
 Github: [https://github.com/zmcartor][3] 
+
+ - iOS, Javascript developer in Boulder, Colorado.
+ - Previously CTO of [Taivara][1]; a digital development firm in Columbus, OH. 
 
 **What I’m Looking For**
 
