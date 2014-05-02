@@ -48,7 +48,7 @@ h2 a:hover {
 }
 
 h2 a {
- text-shadow: 0 1px 0 #7A7377;
+  text-shadow: 1px 1px 1px #7A7377
  }
 
  li.post-list {
