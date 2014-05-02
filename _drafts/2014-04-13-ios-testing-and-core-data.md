@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "iOS Testing with Core Data and OCMock"
+title: "Testing Core Data with OCMock"
 description: ""
 category: code
 tags: ["iOS" , "testing"]
@@ -21,36 +21,75 @@ we're innocently trying to test:
 // lunchOrder -- NSString
 // cost -- int16
 
-FUCKING FIX THIS
 NSEntityDescription *pDesc = [NSEntityDescription entityForName:@"Person" 
                                          inManagedObjectContext:[NSManagedObjectContext MR_defaultContext]];
-Person *p = [[Person alloc] initWithEntity:pDesc 
+Person *realPersonModel = [[Person alloc] initWithEntity:pDesc 
             insertIntoManagedObjectContext:[NSManagedObjectContext MR_defaultContext]];
 
-id personMock = [OCMockObject partialMockForObject: p];
+id personMock = [OCMockObject partialMockForObject: realPersonModel];
 
-// argh! Person.name selector not defined, what's going on?
-XCTestAssertNil(p.name, @"person not nil");
+// argh! Person.name selector not defined, what's going on? 
+// OCMockObject wreaked Core Data @dynamic selectors 
+
+XCTestAssertNil(realPersonModel.name, @"person not nil");
 
 {% endhighlight %}
 
 The code above creates a new Person object and inserts it into the default
-NSManagedObjectContext courtesy of Magical Record. A partial mock is created
-and a method stubbed out. However whenever a property of the NSManagedObject is
-accessed, we receive an odd 'unknown selector' error. What's going on here ?
+NSManagedObjectContext using helpers provided by Magical Record. A partial mock of 'Person' object is created with OCMock.
+However, whenever a property of the NSManagedObject is accessed, we receive an odd 'unknown selector' error.
 
 ### @Dynamic properties
-Core Data implements property accesors through @dynamic properties. Write about
-the Dynamic stuff and how that works.
+Core Data implements property accesors through @dynamic properties. Any property marked @dynamic means the class will figure out howto respond to the selector at runtime. Unlike @property, an automatic _ivar is not created when using @dynamic. When an NSManagedObject is passed to OCMock ```mock object``` or ```partialMockForObject``` the @dynamic selectors are wrecked. 
 
 ### Never, ever mock Core Data
-Don't mock out Core Data (Even Saul says so)
-Use MR to create in-memory stores for the objects during each test.
+Don't mock out Core Data. There is too much proprietary weird stuff going on to trust the test completely. If this feels dirty to you, another option is to abstract any business operations out of your NSManagedObjects into a service layer which can be properly mocked. 
+
+#### In memory store
+
+When testing with XCTest, the ```+ setUp ``` and ```+ tearDown``` methods create a new in-memory Core Data stack and tear it down once the tests have completed. I find this provides the speed and test isolation necessary to 'trust' the tests.
 
 {% highlight objective-c %}
++ (void)setUp {
+    [MagicalRecord setupCoreDataStackWithInMemoryStore];
+}
 
-This is some code here showing everything works
++ (void)tearDown {
+    [MagicalRecord cleanUp];
+}
 
 {% endhighlight %}
 
+### Verify NSManagedObject methods without wrecking @dynamic properties
+
+Besides providing mock objects, OCMock still has use by providing stubs, block callbacks, and verifying method calls.
+
+{% highlight objective-c %}
+NSEntityDescription *pDesc = [NSEntityDescription entityForName:@"Person" 
+                                         inManagedObjectContext:[NSManagedObjectContext MR_defaultContext]];
+
+// dont pass this model to OCMock, but use this model within assertions or pass to other components.
+Person *realPersonModel = [[Person alloc] initWithEntity:pDesc 
+            insertIntoManagedObjectContext:[NSManagedObjectContext MR_defaultContext]];
+
+
+// OCMock will wreak out @dynamic properties, so make a new model for mock partial
+Person *modelForMocking = [[Person alloc] initWithEntity:pDesc 
+            insertIntoManagedObjectContext:[NSManagedObjectContext MR_defaultContext]];
+
+// create our stubs on this mock
+id groupModelMock = [OCMockObject partialMockForObject:modelForMocking];
+[[[groupMock stub] andReturn:@"ZachDude"] name];
+
+// oddly enough, now calling realPersonModel.name will return @"ZachDude".
+
+{% endhighlight %}
+
+### Programmer discovers howto use OCMock with Core Data using this one weird trick!
+Creating two NSManagedObjects, one for use within assertions and another to feed into OCMock for stubbing, etc works because of this reason. (taken from OCMock docs)
+>Partial Mocks
+>
+>Creates a mock object that can be used in the same way as anObject. When a method that is not stubbed is invoked it will be forwarded to anObject. When a stubbed method is invoked using a reference to anObject, rather than the mock, it will still be handled by the mock.
+
+In laymens terms, this means by passing ```modelForMocking``` to partialForMock:, the other Person model, ```realPersonModel``` is also affected. Except now that ```realPersonModel``` can finally resolve it's @dynamic selectors, we can contiue to test in comfort.
 
