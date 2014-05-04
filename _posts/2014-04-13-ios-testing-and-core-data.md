@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Testing Core Data with OCMock"
-description: ""
+description: "Testing Core Data with OCmock. Code and tutorial examples explained"
 category: code
 tags: ["iOS" , "testing"]
 ---
