@@ -17,7 +17,7 @@ each class.
 
 Luckily, there is one function to rule all Sequences :
 
-{% highlight swift %}
+{% highlight objective-c %}
 
  func each<S:Sequence, T where T==S.GeneratorType.Element>(sequence: S, callback:(T) -> Void) {
         for item in sequence {
@@ -36,7 +36,7 @@ is a type which corresponds to the 'type' of object within the sequence.
 I first tried a simple (T) type with no specifiers, but this did not work, unfortunately.
 Our one .each method is callable with a trailing closure as:
 
-{% highlight swift %}
+{% highlight objective-c %}
 
 [1,2,3,"bench!"].each {println($0)}
 
