@@ -20,7 +20,7 @@ I’m seeking the company of similarly passionate developers and creative indivi
 
 **About Myself**
 
-I’m a pragmatic thinker who believes there is no such thing as a perfect program, just some are more optimal than others. When it comes to a problem I’m having trouble solving, I feel it’s better to take a walk in the park and let my subconscious have a crack at it. I have a wide technical skill range that includes work in the secret agent-esque world of information security, teaching and mentoring students in programming, and am involved in the Columbus start-up scene. What makes me different from ‘just another coder’ is my ability to creatively explain highly technical concepts to non-technical people. I love teaching. Each student brings their own point of view which makes me approach the subject matter in ways I would have never considered.
+I’m a pragmatic thinker who believes there is no such thing as a perfect program, just some are more optimal than others. When it comes to a problem I’m having trouble solving, I feel it’s better to take a walk in the park and let my subconscious have a crack at it. I have a wide technical skill range that includes work in the secret agent-esque world of information security, teaching and mentoring students in programming. What makes me different from ‘just another coder’ is my ability to creatively explain highly technical concepts to non-technical people. I love teaching. Each student brings their own point of view which makes me approach the subject matter in ways I would have never considered.
 
 **Why I love Programming**
 
