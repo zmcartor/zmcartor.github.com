@@ -3,7 +3,7 @@ layout: post
 title: "UIVisualEffects in 10mins"
 description: "iOS8 UIVisualEffects description, code examples"
 category: presentaion
-tags: ["iOS"]
+tags: ["iOS", "Design"]
 ---
 {% include JB/setup %}
 
