@@ -56,6 +56,31 @@
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
+    <style type="text/css">
+
+div.first {
+  background-color: #FF3B30;
+}
+
+div.second {
+  background-color: #FF9500;
+}
+
+div.third {
+  background-color: #FFCC00;
+}
+
+div.span6 a h2 {
+  color: white;
+}
+
+div.span6 a {
+  text-decoration: none;
+}
+
+  </style>
+
+
   </head>
 
   <body>
@@ -69,20 +94,23 @@
     </div>
 
     <div class="container-narrow">
-
       <div class="content">
         <div class ="row">
         <div class="span12">
 
         <h1>HackAZach</h1>
 
-        
+         <div class="row">
+           <div class="span6 first"><a href="/blog.html"><h2>Blog</h2></a></div>
+           <div class="offset1 span6 second"><a href="/about.html"><h2>About</h2></a></div>
+           <div class="offset2 span6 third"><a href="/posts.html"><h2>Errata</h2></a></div>
+          
+        </div>
 
         <br>
-        <div class="row">
-          <div class="span6"><a href="/blog.html">Blog</a></div>
-          <div class="span6"><a href="/about.html">About</a></div>
-        </div>
+        <p>
+        <img src="/images/frontpage.png">
+        </p>
 
       </div>
       </div>
