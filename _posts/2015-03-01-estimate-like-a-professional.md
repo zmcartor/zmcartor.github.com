@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Estimate like a professional"
-description: "howto provide quality software estimates with confidence"
+description: "Provide software estimates with confidence; like a professional"
 category: 
 tags: ["software process", "professional development"]
+image : estimations.jpg
 ---
 {% include JB/setup %}
 
