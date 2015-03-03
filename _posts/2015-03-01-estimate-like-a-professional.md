@@ -21,7 +21,7 @@ cause of pain.
 A PM, or group of PMs needs to know exactly how many story points, or hours a
 feature takes. All eyes are you on you. They're expecting a quick estimate
 to log into their spreadsheets and deliver a final ship date to marketing by
-COB. The sweat is gathers; difficult to think with everyone staring and waiting. 
+COB. Sweat gathers; difficult to think with everyone staring and waiting. 
 Instead of thinking clearly, you blurt out "5 hours." A value large enough, you hope,
 to account for the massive oversight of this terrible estimate. It's also small
 enough that the PM won't challenge it as 'too big.' The meeting moves on, and 
@@ -29,7 +29,7 @@ you eventually escape.
 
 ## A constructive alternative
 It's impossible to come up with good estimates on the spot without
-investigating the problem space. Here's an example of howto handle a sprint
+investigating the problem space. Here's howto handle a sprint
 review like a real professional :
 
 **PM** - *What's the estimate for item #12XY , implementation of new sign-in flow?*
@@ -53,5 +53,5 @@ modeling complex multi-variate systems. An accurate estimate demands
 spending appropriate time coding throwaway tests, psuedocode, and ensuring X
 actually does talk to Y in the assumed manner. Investigate every avenue. **The
 side affect of putting in the time is confidence in your estimate!** Confidence
-in estimates begets confidence in the sprint timeline. A team consistently shipping when
-they say they will accrues the trust and confidence of the business.
+in estimates begets confidence in the sprint timeline. A team consistently shipping
+on schedule accrues the trust and confidence of the business.
