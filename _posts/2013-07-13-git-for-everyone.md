@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Git for other people"
+title: "Git for everyone, a non-technical introduction"
 description: "Explanation of Git for non developers using soup as an analogy for version control"
 category: git
 tags: ['git']
@@ -19,9 +19,8 @@ I recently needed a way to explain the Git workflow to non technical project man
 
 Now, on with the story!
 
- ![](/images/ChefPenguinTitleCard.png)
-
-The restaurant where Chef Penguin resides is widely reknowned for it's ability to quickly  produce exceptionally delicious soups. Now, Chef Penguin is a skilled gourmand, able to recognize the subtle differences and savory pairings of spices, broth, and meats. But his skill is only half the story: the kitchen's ability to produce such high quality soups also relies on a unique collaborative process. Chef Penguin employs three Sous Chefs which every morning, take a crock of soup from the Master serving pot:
+### Git is like many pots of soup ...
+The restaurant where Chef Penguin resides is widely reknowned for it's ability to quickly produce exceptionally delicious soups. Now, Chef Penguin is a skilled gourmand, able to recognize the subtle differences and savory pairings of spices, broth, and meats. But his skill is only half the story: the kitchen's ability to produce such high quality soups also relies on a unique collaborative process. Chef Penguin employs three Sous Chefs which every morning, take a crock of soup from the Master serving pot:
 
 Customers are dished up from the Master serving pot as well. When taking their own crocks of soup, it's important each Sous Chef ladle from the same pot as customers.
 Throughout the day, each Sous Chef experiments within their own crock of soup. 
@@ -40,11 +39,12 @@ Hmm, the new spices don't taste quite right with the grilled chicken, so this So
 
 Sometimes pour requests are rejected, but that's ok, it's all part of the process.
 
-and on and on throughout the afternoon Chefs continue to experiment, making the Master pot of soup better and better with every 'pour' request.
+On and on throughout the afternoon, chefs continue to experiment, making the Master pot of soup better and better with every 'pour' request. The steps of the process look like:
+
 * add various tweaks in private crock of soup
 * submit pour requests to Chief Chef Penguin, and 
 * fetch new updates from the Master pot 
 
-Continue throughout the day until dinner time. Now the final product is served to hungry customers. 
+All day, until dinner time. Now the final product is served to hungry customers. 
 
 Yum! Great job everyone, see you all tomorrow!
