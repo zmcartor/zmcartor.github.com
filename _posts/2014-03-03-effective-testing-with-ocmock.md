@@ -11,15 +11,16 @@ tags: ["iOS", "testing"]
 This article assumes the reader is familiar with testing in Xcode 5 using [XCTest](https://developer.apple.com/library/ios/documentation/ToolsLanguages/Conceptual/Xcode_Overview/UnitTestYourApp/UnitTestYourApp.html), BDD style [Kiwi](https://github.com/allending/Kiwi) or another iOS testing framework.
 
 ### What is mocking ? Paper tigers, mostly
-# ![paper tiger](/images/paper_tiger.jpg)
+#![paper tiger](/images/paper_tiger.jpg)
 When unit testing, it's imperative to instantiate as little concrete components as possible to keep tests short, fast, and preserve unit isolation. In a modern Object Oriented system, the component under test will likely have several object dependencies. Instead of instantiating dependencies as concrete classes, we use mocks. Mocks are 'fake' objects with pre-defined behavior to stand-in for concrete objects during testing. The component under test does not know the difference! With mocks, a component can be tested with confidence that it behaves as designed within a larger system.
 <br/>
-### Common mock use cases
 
+### Common mock use cases
+(* note, these examples use OCMock 2 syntax)
 #### Stubbed methods
 To start, here's a simple example which explains the general stubbing grammar in OCMock : 
 {% highlight objective-c %}
- id jalopy = [OCMock mockForClass[Car class]];
+ id jalopy = [OCMockObject mockForClass:[Car class]];
  [[[jalopy stub] andReturn:@"75kph"] goFaster:[OCMArg any] units:@"kph"];
  
  // if returning a scalar value, andReturnValue: can be used
@@ -49,7 +50,7 @@ OCmock provides several diffent types of mocks, each with their specific use cas
 
 Any mock created in this fashion : 
 {% highlight objective-c %}
- id mockThing = [OCMock mockForClass[Thing class]];
+ id mockThing = [OCMockObject mockForClass:[Thing class]];
 {% endhighlight %}
 
 Is what I call a 'vanilla' mock. Vanilla mocks will raise an exception if an un-stubbed method is invoked. This can get a tedious as every single method called during the mock's lifecycle must be stubbed. (more on stubbing in the next section)
@@ -107,7 +108,7 @@ In this example, we have a method which downloads weather data for a given zip a
         
         //4. invoke block with pre-defined input
         NSDictionary *testResponse = @{@"high": 43 , @"low": 12};
-        weatherStubResponse(groupMemberMock);
+        weatherStubResponse(testResponse);
         
     }]downloadWeatherDataForZip@"80304" callback:[OCMArg any] ];
 
@@ -121,7 +122,7 @@ The general idea here is reletively simple, even though it's implementation requ
 <br/>
 
 ### In closing
-# ![paper tiger](/images/origami-swan-cute.jpg)
+#![paper swan](/images/origami-swan-cute.jpg)
 Hopefully this article and examples have clarified some of the most commons uses of OCMock. The OCMock site: [http://ocmock.org/features/](http://ocmock.org/features/) is a the best reference for everything in the OCMock world.
 
 Mocking can be tedious but is necessary to fully test a modern, OO system. If a dependency graph is difficult to test with mocks, this is an indication the design may need to be re-considered.
