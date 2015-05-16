@@ -8,15 +8,19 @@ tags: ["iOS", "testing"]
 {% include JB/setup %}
 
 ### Audience
-This article assumes the reader is familiar with testing in Xcode 5 using [XCTest](https://developer.apple.com/library/ios/documentation/ToolsLanguages/Conceptual/Xcode_Overview/UnitTestYourApp/UnitTestYourApp.html), BDD style [Kiwi](https://github.com/allending/Kiwi) or another iOS testing framework.
+This article assumes the reader is familiar with Xcode 5 testing environment using [XCTest](https://developer.apple.com/library/ios/documentation/ToolsLanguages/Conceptual/Xcode_Overview/UnitTestYourApp/UnitTestYourApp.html), BDD style [Kiwi](https://github.com/allending/Kiwi) or another iOS testing framework.
 
 ### What is mocking ? Paper tigers, mostly
-#![paper tiger](/images/paper_tiger.jpg)
+
+![paper tiger](/images/paper_tiger.jpg)
+
 When unit testing, it's imperative to instantiate as little concrete components as possible to keep tests short, fast, and preserve unit isolation. In a modern Object Oriented system, the component under test will likely have several object dependencies. Instead of instantiating dependencies as concrete classes, we use mocks. Mocks are 'fake' objects with pre-defined behavior to stand-in for concrete objects during testing. The component under test does not know the difference! With mocks, a component can be tested with confidence that it behaves as designed within a larger system.
 <br/>
 
 ### Common mock use cases
+
 (* note, these examples use OCMock 2 syntax)
+
 #### Stubbed methods
 To start, here's a simple example which explains the general stubbing grammar in OCMock : 
 {% highlight objective-c %}
@@ -115,14 +119,20 @@ In this example, we have a method which downloads weather data for a given zip a
 {% endhighlight %}
 
 The general idea here is reletively simple, even though it's implementation requires some explanation:
+
 1. This mock uses the 'andDo' method which accepts an NSInvocation argument. An NSInvocation object represents an 'objectivetified' representation of a method invocation. Through this NSinvocation object, it is possible to intercept the block parameter passed to our function.
+
 2. Declare a block parameter with the same method signature as the one in our test method. 
+
 3. NSInvocation instance method 'getArgument:atIndex:' assigns the block parameter passed to the original function to our locally declared block variable. **Note : ** in Objective-C, the first two parameters passed to any function are 'self' and '_cmd.' This is a little feature of the runtime and something to consider when grabbing parameters by index from an NSInvocation.
+
 4. Finally, pass the callback a pre-defined dictionary. 
 <br/>
 
 ### In closing
-#![paper swan](/images/origami-swan-cute.jpg)
+
+![paper swan](/images/origami-swan-cute.jpg)
+
 Hopefully this article and examples have clarified some of the most commons uses of OCMock. The OCMock site: [http://ocmock.org/features/](http://ocmock.org/features/) is a the best reference for everything in the OCMock world.
 
 Mocking can be tedious but is necessary to fully test a modern, OO system. If a dependency graph is difficult to test with mocks, this is an indication the design may need to be re-considered.
