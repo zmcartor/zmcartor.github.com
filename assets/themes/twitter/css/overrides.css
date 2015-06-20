@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "PxGrotesk-Regular", "Arial", sans-serif;
+  font-family:'proxima-nova', 'Helvetica', 'Avenir', 'Arial', 'sans-serif';
   font-size: 16px;
   color: #333333;
   background-color: #ffffff;
@@ -40,6 +40,27 @@ p img {
   -webkit-box-shadow: 3px 3px 1px #ccc;
   -moz-box-shadow: 3px 3px 1px #ccc;
   margin: 20px 0 20px 0;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'freight-sans-pro', sans-serif;
+}
+
+h1 a {
+  font-size: 50px;
+}
+
+h1 {
+  font-size: 47px;
+}
+
+h2 {
+  display: block;
+  font-size: 40px;
+  line-height: 1em;
+  font-weight: 100;
+  color: #000;
+  margin-bottom: 30px;
 }
 
 h2 a:hover {
