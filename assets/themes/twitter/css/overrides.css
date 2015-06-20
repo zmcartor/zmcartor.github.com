@@ -43,7 +43,8 @@ p img {
 }
 
 h1,h2,h3,h4 {
-  font-family: 'freight-sans-pro', sans-serif;
+  font-family:'proxima-nova', 'Helvetica', 'Avenir', 'Arial', 'sans-serif';
+  font-weight: 200;
 }
 
 h1 a {
@@ -51,7 +52,7 @@ h1 a {
 }
 
 h1 {
-  font-size: 47px;
+  font-size: 50px;
 }
 
 h2 {
