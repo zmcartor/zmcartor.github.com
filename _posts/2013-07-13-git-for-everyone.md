@@ -4,6 +4,7 @@ title: "Git for everyone. A non-technical introduction"
 description: "Explanation of Git for non developers using soup as an analogy for version control"
 category: git
 tags: ['git']
+image: gitfrog.png
 ---
 {% include JB/setup %}
 

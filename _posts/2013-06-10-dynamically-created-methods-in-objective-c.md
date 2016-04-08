@@ -4,6 +4,7 @@ title: "Objective-C method metaprogramming"
 description: "A simple introduction to the world of meta-programming in Objective-C. Code provided which illustrates howto metaprogram dynamic instance and class methods"
 category: code 
 tags: ['iOS', 'metaprogramming']
+image: metaprogramming.png
 ---
 {% include JB/setup %}
 
