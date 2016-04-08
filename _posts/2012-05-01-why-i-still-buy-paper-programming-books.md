@@ -3,7 +3,7 @@ layout: post
 title: "Why I still buy paper programming books"
 description: ""
 category: 'productivity'
-tags: []
+tags: ["professional development"]
 ---
 {% include JB/setup %}
 

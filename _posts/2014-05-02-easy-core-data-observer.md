@@ -4,6 +4,7 @@ title: "Easy Core Data Observer"
 description: "Presentation showing how to create a simple observer for Core Data changes"
 category: presentation 
 tags: ["iOS", "Core Data"]
+image: observer.png
 ---
 {% include JB/setup %}
 

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>HackaZach;</title>
+ <link href="http://zmcartor.github.com/" rel="self"/>
+ <link href="http://zmcartor.github.com"/>
+ <updated>2013-03-18T21:00:21-04:00</updated>
+ <id>http://zmcartor.github.com</id>
+ <author>
+   <name>superdude</name>
+   <email>zach@hackazach.net</email>
+ </author>
+
+ 
+ <entry>
+   <title>Why I still buy paper programming books</title>
+   <link href="http://zmcartor.github.com/productivity/2013/03/16/why-i-still-buy-paper-programming-books"/>
+   <updated>2013-03-16T00:00:00-04:00</updated>
+   <id>http://zmcartor.github.com/productivity/2013/03/16/why-i-still-buy-paper-programming-books</id>
+   <content type="html">&lt;p&gt;I have a secret , I still pay money for and read &lt;em&gt;paper&lt;/em&gt; programming books.&lt;/p&gt;
+
+&lt;p&gt;When I’m reading a book, I’m the mood to learn something. Distractions must be eliminated. Electronic books exist on the computer, which is pretty much a massive sucking vortex of distraction.&lt;/p&gt;
+
+&lt;p&gt;Books dont have hyperlinks. There’s only one thing to do with a book, read it. (and maybe throw it at a raccoon. but that’s different.)&lt;/p&gt;
+
+&lt;p&gt;It’s impossible to cut/paste code from a paper book straight into an editor. (An urge that is sometimes hard to suppress with electronic books.) Typing in the code myself improves muscle memory and really makes the memory ‘sticky.’&lt;/p&gt;
+
+&lt;p&gt;Books are also fun to lend out. And if you get a bunch of them on your bookshelf, people will think you’re smart* ;)&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>We can do better.. no more debugging with console.log</title>
+   <link href="http://zmcartor.github.com/2013/03/16/we-can-do-better-no-more-debugging-with-consolelog"/>
+   <updated>2013-03-16T00:00:00-04:00</updated>
+   <id>http://zmcartor.github.com/2013/03/16/we-can-do-better-no-more-debugging-with-consolelog</id>
+   <content type="html">&lt;p&gt;This is an appeal to JS developers everywhere.&lt;/p&gt;
+
+&lt;p&gt;We can do better than console.log when debugging our code. I know how easy it is to debug via console.log and how fun it is to hit ‘refresh’ and then eagerly check the Firebug or Chrome console. I know it’s almost like being a child at Christmas : &lt;em&gt;“What did console-claus output for me!!”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Errant debug statements are always cleaned from the code before it ships, right?&lt;/p&gt;
+
+&lt;p&gt;(Yeah, probably…)&lt;/p&gt;
+
+&lt;p&gt;For fun, keep the JS console open while browsing the Internet today. Be amazed at the hidden world of errant console.log(..) calls unfolding before your eyes..&lt;/p&gt;
+
+&lt;p&gt;Oh, and console.log(..) crashes your shit on IE huh? That’s a real bummer.&lt;/p&gt;
+
+&lt;h3 id='what_do_to'&gt;What do to&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;TL;DR - You’ll be able to debug faster and may learn a thing or two about your code.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A symbolic debugger offers some big advantages over console.log(..)&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The ability to see the entire runtime environment at once, including local variable values. A complete view of the execution environment, not just a slice.&lt;/li&gt;
+
+&lt;li&gt;The grind of ‘place debug code/refresh’ gets tedious and can turn into a time waster. A symbolic debugger speeds up the process through live tracing and dynamic breakpoints.&lt;/li&gt;
+
+&lt;li&gt;No extra code to clean up after debugging is complete.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Get familiar with Firebug Script Console, or the Chrome/Safari developer tools.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Chrome/Safari&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Firebug&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id='id3'&gt;#&lt;/h2&gt;
+
+&lt;p&gt;&lt;span /&gt;: http://www.we-are-gurus.com/blog/1578-avoid-console-log-error-with-ie &amp;#8220;console.log and IE&amp;#8221; &lt;span /&gt;: http://www.nsbasic.com/app/tutorials/TT10.htm &amp;#8220;http://www.nsbasic.com/app/tutorials/TT10.htm&amp;#8221; &lt;span /&gt;: http://getfirebug.com/javascript &amp;#8220;http://getfirebug.com/javascript&amp;#8221; &lt;span /&gt;: http://getfirebug.com/wiki/index.php/Script_Panel &amp;#8220;http://getfirebug.com/wiki/index.php/Script_Panel&amp;#8221;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>There are no couches in the woodshop</title>
+   <link href="http://zmcartor.github.com/productivity/2013/03/16/there-are-no-couches-in-the-woodshop"/>
+   <updated>2013-03-16T00:00:00-04:00</updated>
+   <id>http://zmcartor.github.com/productivity/2013/03/16/there-are-no-couches-in-the-woodshop</id>
+   <content type="html">&lt;p&gt;Dont waste time ‘thinking’ at a computer. Step away, and draw out the idea on paper, a whiteboard, lipstick on a mirror - whatever. This media is static - which is important if any thinking is to occur. Only after there’s something to say should the computer be in use. Remember, a computer is a distraction machine. You can’t check twitter while using a belt sander or Miter Saw.&lt;/p&gt;
+
+&lt;p&gt;The woodshop is for DOING things. There is a reason people don’t hang out in the woodshop on a couch chatting or browsing catalogs. Treat your time at the computer as you would sitting at a workbench. You are paid for your thoughts. It just so happens you also know howto express your thoughts as executable code to a machine.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>@SpeakingSecret   Python Twitter Bot and Natural Language Processing</title>
+   <link href="http://zmcartor.github.com/2013/03/16/speakingsecret---python-twitter-bot-and-natural-language-processing"/>
+   <updated>2013-03-16T00:00:00-04:00</updated>
+   <id>http://zmcartor.github.com/2013/03/16/speakingsecret---python-twitter-bot-and-natural-language-processing</id>
+   <content type="html">&lt;p&gt;I’ve been playing around with the Twitter Tools library for Python after being inspired by Vivek Haldar’s post:&lt;/p&gt;
+
+&lt;p&gt;My bot is fairly simple and is currently hosted on my github &lt;a href='https://github.com/zmcartor/SpeakingSecret'&gt;here&lt;/a&gt;. Instead of using Eliza for psychoanalysis conversation, I decided to go with Cleverbot as an alternative. Cleverbot has it’s own Python API &lt;a href='http://code.google.com/p/pycleverbot/'&gt;which is pretty fun&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The SpeakingSecret bot is hosted on my laptop, so she might always be available for divination depending on astral connections. Be patient..&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Going further, the Python Natural Language Toolkit&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve just started delving into the powerful NLTK to give this bot it’s own brain. Hooking it up to an AI like Cleverbot is fun, but I ultimately intend to create a pluggable interface that will allow different bot personalities to interact with those seeking wisdom on Twitter.&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;%2B&lt;/span&gt; Python NLTK: &lt;a href='http://www.nltk.org/'&gt;Project Page&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;%2B&lt;/span&gt; Great book on Python NLTK and the subject matter in general. &lt;a href='http://www.amazon.com/Natural-Language-Processing-Python-Steven/dp/0596516495/ref=sr_1_1?ie=UTF8&amp;amp;qid=1304910337&amp;amp;sr=8-1'&gt;(Amazon)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;%2B&lt;/span&gt;&lt;a href='http://mike.verdone.ca/twitter/'&gt;6&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;%2B&lt;/span&gt; SpeakingSecret on &lt;a href='http://twitter.com/#!/speakingsecret'&gt;Twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span /&gt;: http://blog.vivekhaldar.com/post/2830035130/how-to-write-a-twitter-bot-in-python&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Coffeescript and QR Codes</title>
+   <link href="http://zmcartor.github.com/code/2013/03/16/coffeescript-and-qr-codes"/>
+   <updated>2013-03-16T00:00:00-04:00</updated>
+   <id>http://zmcartor.github.com/code/2013/03/16/coffeescript-and-qr-codes</id>
+   <content type="html">&lt;p&gt;The emerging prevalence of QR codes is slowly turning the urban landscape into a hyperlinked, cyber-punk augmented reality. These blocky, alien codes connect the terrestrial landscape with the limitless possibility of the Internet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='http://media.tumblr.com/tumblr_lx4t2taJjQ1r4xvaq.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;For generating your own QR codes and turning your neighborhood into a Snowcrash-esque hyperreality; I present Blocky: A Client-side QR code library written in CoffeeScript.&lt;/p&gt;
+
+&lt;p&gt;Blocky began as a way to generate configurable QR codes without relying on any 3rd party service. All QR code generation is performed clientside and displayed via HTML5 . I’m currently adding support for SVG and other types of display methods should the need arise. At it’s core, Blocky uses the awesome SVG library created by Kazuhiko Arasé. &lt;a href='http://media.tumblr.com/tumblr_lx4t2taJjQ1r4xvaq.png'&gt;1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Let’s generate some funky QR codes!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The constructor signature looks like this:&lt;/p&gt;
+
+&lt;p&gt;new Blocky( QR_code_message, id_of_container , config_object)&lt;/p&gt;
+
+&lt;p&gt;A element is appended to the container.&lt;/p&gt;
+
+&lt;p&gt;The config object takes the following values:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;cell_size&lt;/strong&gt;: the size of the QR cells. Generally just think of it as the size of the QR code. Default 4.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;black&lt;/strong&gt;: the color to use as ‘black’ in the QR code. pass as a quoted rgb value like “rgb(1,2,3)”&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;white&lt;/strong&gt;: just like black, only… white.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;error_level&lt;/strong&gt;: the QR error level to use. Acceptable values: M , H , Q, L. Default H&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;color_scheme&lt;/strong&gt;: there are several default color schemes avaialble.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Try out these color_scheme values to get started: watermelon , wedding, arctic or spicy.&lt;/p&gt;
+
+&lt;p&gt;Check out the project on Github: &lt;a href='https://github.com/zmcartor/Blocky'&gt;Blocky on GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;References:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://media.tumblr.com/tumblr_lx4t2taJjQ1r4xvaq.png'&gt;1&lt;/a&gt; QR code lib by Kazuhiko Arasé&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='https://github.com/zmcartor/Blocky'&gt;2&lt;/a&gt; QR codes Wikipedia: &lt;a href='http://en.wikipedia.org/wiki/QR_code' /&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>iOS Network Testing</title>
+   <link href="http://zmcartor.github.com/code/2013/03/14/ios-network-testing"/>
+   <updated>2013-03-14T00:00:00-04:00</updated>
+   <id>http://zmcartor.github.com/code/2013/03/14/ios-network-testing</id>
+   <content type="html">&lt;p&gt;&lt;a href='http://hackazach.net/post/44988952817/ios-network-testing' title='Permalink to HackaZach; • iOS Network Testing'&gt;Permalink&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;During development of an API client, do you require VPN connectivity to hit web service? Is a network service your app relies on a little less than completely reliable? oh and each network error handler has been tested to ensure things keep working, right? Yeah - Maybe not. Network testing can be a real pain in the ass. The aim of this article is to lower the aching pain in your backside while testing iOS apps; and to hopefully make it a part of normal workflow.&lt;/p&gt;
+
+&lt;p&gt;This article contains a sample walk-through of testing an imaginary web service with ILTesting, AFNetworking and Kiwi. It’s assumed the reader is familiar with the basics of Cocoa Touch, XCode and project creation.&lt;/p&gt;
+
+&lt;p&gt;If you’re a solid iOS dev but not familiar with Kiwi or AFnetworking, please check them out:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='https://github.com/allending/Kiwi/wiki/Guide:-Up-and-Running-with-Kiwi' title='Kiwi'&gt;Kiwi&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='https://github.com/AFNetworking/AFNetworking'&gt;AFNetworking&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It should be noted the approach shown using ILTesting will work with most any testing framework or networking library on iOS.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example DogPark Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The example application repo is located here on Github: &lt;a href='https://github.com/zmcartor/DogPark-ILTesting'&gt;DogPark&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In our example application, we’ll be testing an implementation of an imaginary Dog Park API client. The client sends requests over HTTP and presently has two methods:&lt;/p&gt;
+
+&lt;p&gt;We’ll get to the fun of testing a Dog Park API soon, but first a little about the network testing library we’ll be using.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intro To ILTesting (&lt;a href='https://github.com/zmcartor/ILTesting'&gt;GitHub&lt;/a&gt;)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The magic behind ILTesting is simple: it ingeniously registers itself as an NSURLPrototcol handler thereby getting “first dibs” to handle HTTP requests from the application. (A more technically in-depth article on NSURLProtocol is available here : &lt;a href='http://nshipster.com/nsurlprotocol/'&gt;NSHipster&lt;/a&gt; .)&lt;/p&gt;
+
+&lt;p&gt;The registration of a pre-defined HTTP handler effectively keeps our app from hitting the network. (This speeds up our tests!) But the main point is predictively crafting an HTTP response for a given URL.&lt;/p&gt;
+
+&lt;p&gt;(If you’re wondering ‘why not just mock AFNetworking instead’, I shy away from mocking code that I did not write myself.)&lt;/p&gt;
+
+&lt;p&gt;Let’s take a look at a couple ILTesting class methods:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The ILTesting Delegate&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ILTesting allows for delegation of client response data to a class which implements the protocol.&lt;/p&gt;
+
+&lt;p&gt;The protocol-delegate protocol looks like this and includes several optional methods:&lt;/p&gt;
+
+&lt;p&gt;Within the sample application, the delegate is implemented in HKZFakeWebsServer.&lt;/p&gt;
+
+&lt;p&gt;A tip for dealing with large APIs is to have several different classes each implement CannedURLProtocol and break up response testing between various functional areas. Ex - billing, user authentication, etc.&lt;/p&gt;
+
+&lt;p&gt;Enough stuffy code talk, let’s get going and have some fun!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Back to the DogPark&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;img alt='image' src='http://media.tumblr.com/547a729f43c4bddfcc8603571dc8ecb9/tumblr_inline_mjfb450f2O1qz4rgp.jpg' /&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;So anyway, we need to test our example APIClient methods. When beginning network testing, this process has proved successful:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Capture the desired JSON response from the API and save it within a file. (In the sample application, these are kept within the DogParkTests/JSON folder.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Create a trigger within the ILTesting delegate to serve the response.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Write a test which utilizes the response.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Take a look at HKZFakeWebserver which implements ‘&lt;em&gt;responseDataForClient’&lt;/em&gt; which is self explanitory ;) - it loads various JSON files as response data when specific URLs are requested. The request is matched on HTTP verb and path.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Taking things further - Completing the implementation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Within the sample application, both tests presently fail. I leave the implementation of the client to the reader as an exercise in using ILTesting. The example code also serves as a reference to employ this testing method in your own project.&lt;/p&gt;
+
+&lt;p&gt;Happy testing!&lt;/p&gt;
+
+&lt;p&gt;References:&lt;br /&gt;&lt;a href='https://github.com/allending/Kiwi/wiki/Guide:-Up-and-Running-with-Kiwi' title='Kiwi'&gt;1&lt;/a&gt; Credit for the original idea of injecting test data via NSURLProtocol goes to Claus Broch : &lt;a href='http://www.infinite-loop.dk'&gt;www.infinite-loop.dk&lt;/a&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>

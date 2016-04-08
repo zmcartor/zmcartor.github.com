@@ -5,6 +5,7 @@ description: "Slim XCTest targets build faster and are easier to manage.
 Properly configuring the test and app target allows for clean code separation."
 category: code
 tags: ["iOS" , "testing"]
+image: slim.png
 ---
 {% include JB/setup %}
 

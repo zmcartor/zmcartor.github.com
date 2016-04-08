@@ -3,6 +3,7 @@ layout: post
 title: "OCMock Test Origami"
 description: "Walkthrough of OCMock and how mocking features can be applied to common test scenarios"
 category: code
+image: paper_tiger.jpg 
 tags: ["iOS", "testing"]
 ---
 {% include JB/setup %}

@@ -5,6 +5,7 @@ description: "Application UX design and purpose are the most important steps
 when beginning to solve problems through software. Don't rush off to code, but
 instead take the time to plan through interative design."
 category: design 
+image: design.png
 tags: ["Design"]
 ---
 {% include JB/setup %}

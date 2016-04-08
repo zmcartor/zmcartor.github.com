@@ -4,6 +4,7 @@ title: "Chief Technical Gardener"
 description: "responsibilies of the technical founder within an early stage
 company is much like growing a garden"
 category: professional 
+image: technical_gardener.png
 tags: [startups]
 ---
 {% include JB/setup %}

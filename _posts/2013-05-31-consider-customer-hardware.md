@@ -3,7 +3,8 @@ layout: post
 title: "Consider customer hardware"
 description: "Consider customer hardware when developing cutting edge web apps. A cautionary tirade."
 category: productivity 
-tags: ['productivity']
+tags: ['productivity', "professional development"]
+
 ---
 {% include JB/setup %}
 

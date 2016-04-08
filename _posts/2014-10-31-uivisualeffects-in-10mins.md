@@ -4,6 +4,7 @@ title: "UIVisualEffects in 10mins"
 description: "iOS8 UIVisualEffects description, code examples"
 category: presentaion
 tags: ["iOS", "Design"]
+image: uivisualeffects.png
 ---
 {% include JB/setup %}
 

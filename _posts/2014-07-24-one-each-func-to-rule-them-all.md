@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "One .each func to rule them all"
-description: "Swift implementation of an each function"
+description: "Swift v1 implementation of an \"each\" function"
 category: code
 tags: ["iOS", "Swift"]
+image: functional.png
 ---
 {% include JB/setup %}
 

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Run Run Run NSRunLoop"
-description: "Technical description of how NSRunLoop shines when running asynchronous operations within a
-commandline ObjC application."
+description: "Use NSRunLoop and async operations within a cmdline ObjC program."
 category: code
 tags: ["iOS"]
+image : runloop.png
 ---
 {% include JB/setup %}
 
