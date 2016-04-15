@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Testing Core Data with OCMock"
+title: "Core Data and OCMock"
 description: "Testing Core Data with OCmock. Code and tutorial examples explained"
 category: code
 tags: ["iOS" , "testing"]
+image: observer.png
 ---
 {% include JB/setup %}
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Slim XCTest Targets"
-description: "Slim XCTest targets build faster and are easier to manage.
-Properly configuring the test and app target allows for clean code separation."
+description: "For fast builds, ensure test-targets are properly configured"
 category: code
 tags: ["iOS" , "testing"]
 image: slim.png
