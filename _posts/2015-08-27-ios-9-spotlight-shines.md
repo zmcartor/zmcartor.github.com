@@ -8,8 +8,6 @@ image : search.jpg
 ---
 {% include JB/setup %}
 
-![They call me the seeker](/images/search.jpg)
-
 ## TL;DR
 iOS 9 search APIs allow apps to add their own search results to Spotlight search. Previously, only the name of the app appeared as a Spotlight search result. Spotlight is also able to show relevant results from apps which are not installed on the phone, resulting in richer app discovery.
 

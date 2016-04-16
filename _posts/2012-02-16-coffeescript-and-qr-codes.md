@@ -10,8 +10,6 @@ image : qrcode.png
 
 The emerging prevalence of QR codes is slowly turning the urban landscape into a hyperlinked, cyber-punk augmented reality. These blocky, alien codes connect the terrestrial landscape with the limitless possibility of the Internet.
 
-![][1]
-
 For generating your own QR codes and turning your neighborhood into a Snowcrash-esque hyperreality; I present Blocky: A Client-side QR code library written in CoffeeScript.
 
 Blocky began as a way to generate configurable QR codes without relying on any 3rd party service. All QR code generation is performed clientside and displayed via HTML5 . I’m currently adding support for SVG and other types of display methods should the need arise. At it’s core, Blocky uses the awesome SVG library created by Kazuhiko Arasé. [1]
@@ -44,7 +42,6 @@ References:
 
 [2] QR codes Wikipedia: [][4]
 
- [1]: http://media.tumblr.com/tumblr_lx4t2taJjQ1r4xvaq.png
  [2]: https://github.com/zmcartor/Blocky
  []: http://www.d-project.com/qrcode/index.html
  [4]: http://en.wikipedia.org/wiki/QR_code 

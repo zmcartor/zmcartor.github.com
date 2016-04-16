@@ -8,7 +8,6 @@ tags: ['iOS' , 'testing']
 image : apitest.png
 ---
 {% include JB/setup %}
-[Permalink](http://hackazach.net/post/44988952817/ios-network-testing "Permalink to HackaZach; • iOS Network Testing")
 
 Many iOS apps contain code which relies on a third-party web service for data
 or another type of behavior. Testing this interface is often ad-hoc at best.

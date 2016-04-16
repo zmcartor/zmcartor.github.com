@@ -8,8 +8,6 @@ image : estimations.jpg
 ---
 {% include JB/setup %}
 
-![explore every possibility in estimation](/images/estimations.jpg)
-
 Every developer hates estimation. It's stressful to be put on the spot in a
 meeting with the expectation of providing accurate estimates for a non-trivial
 feature. Hastily created estimates affect more than the lives of the

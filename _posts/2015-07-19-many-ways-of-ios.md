@@ -10,17 +10,11 @@ image: gitfrog.png
 
 After spending time refactoring a large legacy app, I've come to recognize a
 fact about iOS: _it's TMTOWTDI as heck._ Think about how many ways there are to
-place a `UIButton` on something. Programmers can get set in a certain way, and
-completely miss an alternate way of doing something. Awareness of all the options
-and their tradeoffs enables optimal decision making.
-
-While I'm generally against TMTOWTDI in
-languages, but it's manfestation on iOS is one of careful progress
-rather than glib overcomplication. iOS is a flexible platform; It's interesting 
+put a `UIButton` on screen. While I'm generally against TMTOWTDI in
+languages, it's manfestation on iOS is one of careful progress
+rather than glib overcomplication. iOS is a flexible platform and It's interesting 
 how many different ways there are to accomplish something; each with their own purpose 
-and tradeoffs. I wrote this quick list first, for fun to see how many ways I
-could come up with for a given topic. This list is for newbies just learning iOS and looking for a
-high level view of different ways to solve a problem.
+and tradeoffs.
 
 ### Layout
 Consider placing a control on the screen at programmer defined coordinates.
@@ -30,60 +24,58 @@ Consider placing a control on the screen at programmer defined coordinates.
   UI often involves an unintelligible gob of magic constants and opaque
   calculations.
 
-- Autoresizing masks, springs struts. Defining how a view shrinks or expands
-  made sense with this simple metaphor.
+- Autoresizing masks, springs struts. Define how a view shrinks or expands
+  makes sense with this simple metaphor.
 
 - Autolayout; the way of the future (so far). Autolayout makes dealing with
-  varying device sizes and orientations better than Frames; however this comes at a steeper
-  learning curve. There are of couse several ways of configuring Autolayout.
+  differnt device sizes and orientations better than Frames; however this comes at a steeper
+  learning curve and harder debugging.
 
-### Layout Organization
-Any of the Layout methods can be used with these methods of encapsulating
-layout information. 
+### Creatiing a UI
 
-- The "Code only" means to not use Interface builder and to do the
-  AutoLayout/Springs/Frame configuration all within code.  Benefits are source
+- Go "Code only" commando and forgo Interface builder. Perform all
+  AutoLayout/Springs/Frame configuration within code.  Benefits are source
   control merges are not life threatening and opening a large source file does
-  not lock up Xcode for days as when working with Storyboards. A disadvantage
-  to working with only code is the inability to visually "see" when you're
-  doing which is a boon when creating complex layouts. A picture is worth 1000
-  words (of code.)
+  not lock up Xcode for days (as when working with Storyboards...)
+  Disadvantage is the inability to actually "see" what you're
+  doing. Complex layout become an exercise in mental gymnastics.
+  A picture is worth 1000 words (of code.)
 
-- With Xibs, UI can be drug out and positioned with whatever method makes
-  sense. The 'File's Owner' outlet can be a little confusing. ViewControllers
+- With Xibs, a single UI element is visually designed in a single file. The
+  flow between screens is less obvious, but multiple contributors can work on
+  UI without an inevitable merge collision.
+  The 'File's Owner' outlet can be a little confusing. ViewControllers
   which make use of Xibs must be instantiated with `init(nibName nibNameOrNil: String?,
-      bundle nibBundleOrNil: NSBundle?)` Because each Xib is it's own file, the
-      change for collison in source control is lessened.
+      bundle nibBundleOrNil: NSBundle?)`
 
 - In storyboards, the flow of an application can be understood by
   non-developers. Different types of segues connect mocked out screens and
-  backing view controllers. Prototyping flows and coordinating with designers
-  is nicer with UX designers who need to see several screens and their
-  relation.
+  backing view controllers. Prototyping and coordinating with designers
+  is easier, but more than one developer working with a storyboard will cause
+  merge conflicts.
 
 ### Object Coupling
-Objects love to pass around information. For example, a selected
-`UITableViewCell` which must pass back information to the previous screen.
 
-- UINotifications are quick and easy when several object care about when
+- UINotifications are quick and easy solution when several object care about when
   something happens, and the data associated with that action. However strictly
-  relying on NSNotifications produces code with lower cohesion as the cause and
-  affect of an action takes some digging.
+  relying on NSNotifications produces code with lower cohesion. 
 
-- Delegate Pattern and Protocols are used extensively within Cocoa. The
+- Delegate Pattern and Protocols appear extensively within Cocoa. The
   interchangability combined with strict type checking and a clearly defined
-  interface make this preferred when extending object functionality.
+  interface make this preferred when extending object functionality. A happy
+  object is one that is closed to modification but open to extensibility.
 
 - Sometimes a delegate and protocol can be a bit heavy. My rule is when a
   delegate protocol has less than 3 methods, block based callbacks make more
   sense. Block still provide strict type checking, but don't littler the
-  codebase with sparse delegate protocol declarations.
+  codebase with sparse protocol declarations.
 
 (I'm sure I forgot others, coupling and cohesion within OO languages is a vast
   topic.)
 
 ### Animations
-- Depending on what needs animating, a simple `UIView` animation may be enough.
+- Most times, a simple `UIView` animation is enough. The block based interface
+  even allows configurable spring based movement for a custom feel.
   UIView provides convenience methods in the family of `animateWithDuration:animations` 
   which are great when animating transforms, opacity or other layer properties.
 
@@ -92,8 +84,8 @@ Objects love to pass around information. For example, a selected
   customization and timing.
 
 - If you need realistic physics animations, there's UIKit Dynamics. Bouncing,
-  rolling, falling, colliding bodies are tricky to implement completely by hand
-  and can feel very unatural.
+  rolling, falling, colliding bodies are tricky to implement completely by
+  hand. (or are not a physicist.)
 
  - Write your own! With [CADisplayLink](http://www.bigspaceship.com/ios-animation-intervals/) it's possible to write your very own
    animation framework. [Facebook POP](https://github.com/facebook/pop) uses this approach.
@@ -104,9 +96,9 @@ Objects love to pass around information. For example, a selected
   course, don't abuse it as a full-fledged persistence solution. It's main
   purpose is to provide sensible app defaults to the user.
 
-- Core Data is THE mobile database persistence framework for iOS. Entites and relations can be modeled via an object graph.
+- Core Data is THE mobile database persistence framework for iOS. Entites and relations are modeled via an object graph. This is a higher abstration then thinking in tables and SQL relations.
 Core Data has a steep learning curve. Multithreaded data access and persistence while maintaining user responsiveness 
-can be a hard balancing act.
+can be a tricky balancing act.
 
 - NSKeyedArchiver encodes objects into blobs of `NSData.` The object must
   implement `encodeWithCoder` and provide a way to encode it's properties into

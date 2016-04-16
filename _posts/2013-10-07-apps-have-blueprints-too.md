@@ -9,8 +9,6 @@ image : blueprints.png
 ---
 {% include JB/setup %}
 
- ![](/images/design.png)
-
 Good apps don't happen by accident. The work of many talented people goes
 into the design, planning, testing, programming, marketing and support of each
 top selling (and some not top selling) apps. But as a programmer, sometimes we
