@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "Apps have blueprints too"
-description: "Application UX design and purpose are the most important steps
-when beginning to solve problems through software. Don't rush off to code, but
-instead take the time to plan through interative design."
+description: "Don't rush off to code, but take the time to plan through interative design."
 category: design 
 image: design.png
 tags: ["Design"]
+image : blueprints.png
 ---
 {% include JB/setup %}
 

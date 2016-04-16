@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Chief Technical Gardener"
-description: "responsibilies of the technical founder within an early stage
-company is much like growing a garden"
+description: "CTO responsibilities are much like caring for a garden"
 category: professional 
 image: technical_gardener.png
 tags: [startups]
+
 ---
 {% include JB/setup %}
 

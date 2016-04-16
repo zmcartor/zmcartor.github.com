@@ -4,6 +4,7 @@ title: "@SpeakingSecret   Python Twitter Bot and Natural Language Processing"
 description: ""
 category: 
 tags: ['python', 'NLP']
+image: python.png
 ---
 {% include JB/setup %}
 

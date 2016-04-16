@@ -4,6 +4,7 @@ title: "Coffeescript and QR Codes"
 description: "Generate beautiful, colored QRCodes with Coffescript and HTML5 SVG"
 category: 'code'
 tags: ['coffeescript' , 'html5']
+image : qrcode.png
 ---
 {% include JB/setup %}
 
