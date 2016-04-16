@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Effective web API testing on iOS"
-description: "Test AFNetworking API code using Kiwi and ILTesting frameworks. A brief walkthrough and sample project illustrating how these frameworks can help write better tested iOS code."
+description: "Head the the dog park and test network code with this sample
+project"
 category: 'code' 
 tags: ['iOS' , 'testing']
+image : apitest.png
 ---
 {% include JB/setup %}
 [Permalink](http://hackazach.net/post/44988952817/ios-network-testing "Permalink to HackaZach; • iOS Network Testing")

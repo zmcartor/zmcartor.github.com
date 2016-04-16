@@ -4,6 +4,7 @@ title: "iOS Core Data Prepopulation"
 description: "Step by step instructions describing howto prepopulate CoreData and sqlite. "
 category: code
 tags: [iOS, core data]
+image : population.png
 ---
 {% include JB/setup %}
 

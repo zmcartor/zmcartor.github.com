@@ -4,7 +4,7 @@ title: "The many ways of iOS"
 description: "How many ways are there to do something on iOS?"
 category: 
 tags: ["iOS", "development"]
-image : somany.png
+image: gitfrog.png
 ---
 {% include JB/setup %}
 
