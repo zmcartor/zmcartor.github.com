@@ -16,7 +16,7 @@ rather than glib overcomplication. iOS is a flexible platform and It's interesti
 how many different ways there are to accomplish something; each with their own purpose 
 and tradeoffs.
 
-### Layout
+## Layout
 Consider placing a control on the screen at programmer defined coordinates.
 
 - Frame hell, the most basic way. Set a frame and stick on the screen.
@@ -31,7 +31,7 @@ Consider placing a control on the screen at programmer defined coordinates.
   differnt device sizes and orientations better than Frames; however this comes at a steeper
   learning curve and harder debugging.
 
-### Creatiing a UI
+## Creatiing a UI
 
 - Go "Code only" commando and forgo Interface builder. Perform all
   AutoLayout/Springs/Frame configuration within code.  Benefits are source
@@ -54,7 +54,7 @@ Consider placing a control on the screen at programmer defined coordinates.
   is easier, but more than one developer working with a storyboard will cause
   merge conflicts.
 
-### Object Coupling
+## Object Coupling
 
 - UINotifications are quick and easy solution when several object care about when
   something happens, and the data associated with that action. However strictly
@@ -73,7 +73,7 @@ Consider placing a control on the screen at programmer defined coordinates.
 (I'm sure I forgot others, coupling and cohesion within OO languages is a vast
   topic.)
 
-### Animations
+## Animations
 - Most times, a simple `UIView` animation is enough. The block based interface
   even allows configurable spring based movement for a custom feel.
   UIView provides convenience methods in the family of `animateWithDuration:animations` 
@@ -90,7 +90,7 @@ Consider placing a control on the screen at programmer defined coordinates.
  - Write your own! With [CADisplayLink](http://www.bigspaceship.com/ios-animation-intervals/) it's possible to write your very own
    animation framework. [Facebook POP](https://github.com/facebook/pop) uses this approach.
 
-### Data Persistence
+## Data Persistence
 
 - NSUserDefaults provides key:value based persistence between launches. Of
   course, don't abuse it as a full-fledged persistence solution. It's main
@@ -105,7 +105,7 @@ can be a tricky balancing act.
   appropriate representations. If your app doesn't require querying associated
   data, this is a good choice to skip to overhead of Core Data.
 
-### Go it alone
+## Go it alone
 In every area presented, there is enough low-level functionality exposed
 within the framworks for a developer to write a completely custom solution if
 desired. Maybe you have a better idea for a persistence framework or a new way
